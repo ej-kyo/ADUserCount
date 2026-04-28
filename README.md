@@ -40,20 +40,7 @@
 
 - Windows 10 / 11 / Server 2016 以上
 - .NET Framework 4.8（Windows 已內建）
-- 加入網域的機器
+- 加入 MSAD 網域的電腦
 - Domain User 權限即可，不需要管理員
 
 ---
-
-## 技術說明
-
-- 使用 .NET `System.DirectoryServices.DirectorySearcher` 直接查詢 LDAP，不依賴 RSAT 或 ActiveDirectory PowerShell 模組
-- 透過 `userAccountControl` bit 2 識別停用帳號
-- 使用 `lastLogonTimestamp` 判斷登入活躍度（跨 DC 同步，約有 14 天誤差，適合統計用途）
-- 分頁查詢（PageSize = 1000）支援大型 AD 環境
-
----
-
-## 授權
-
-MIT License
