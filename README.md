@@ -3,6 +3,11 @@
 統計 Active Directory 中各類帳號數量的 Windows 工具。
 
 ---
+## 下載執行
+
+https://drive.google.com/file/d/11OrrQn5SEof7KlQ0gZgakSp-4MfQUynx/view?usp=drive_link
+
+解壓縮 ZIP 後，執行 EXE
 
 ## 功能
 
@@ -37,23 +42,29 @@
 
 ## 執行需求
 
-- Windows 10 / 11 / Server 2016 以上
-- .NET Framework 4.8（Windows 已內建）
+- Windows 10 / 11 / Windows Server 2016 以上
+- .NET Framework 4.8（上述 Windows 已內建）
 - 加入 MSAD 網域的電腦
-- Domain User 權限即可，不需要管理員
+- Domain User 一般使用者低權限即可，不需要 Domain Admin 管理員高權限
 
 ---
 
 ## FAQ
+
+### 執行訊息
+1. [錯誤] 查詢失敗：指定的網域可能不存在或無法連線。表示該電腦未加入 MSAD 網域。
+
+---
+
 ### Microsft Defender / EDR 攔截 EXE
 Endpoint Detection 對未簽章的 EXE 會觸發 SmartScreen 或 即時保護，主要判斷依據：
 - 沒有數位簽章（Code Signing Certificate）
 - 檔案來源是網路下載（Zone.Identifier 標記）
 
-### 解決方案
+#### 解決方案
 解除封鎖 (以下任一)：
-1. 在 EXE 上按右鍵 → 內容 → 勾選「解除封鎖」→ 確定
-2. 於 Microsft Defender 攔截時勾選同意使用
-3. 加 EDR 入白名單
+- 在 EXE 上按右鍵 → 內容 → 勾選「解除封鎖」→ 確定
+- 於 Microsft Defender 攔截時，勾選同意執行與使用
+- 加 EDR 入白名單
 
 ---
