@@ -13,9 +13,9 @@
 
 ## 下載執行
 
-https://drive.google.com/file/d/1qO2EEeH4Aoukq55A8a7nD-MLFjOUrjlf/view?usp=sharing
+> **ADUserCount_yyyyMMdd.zip**
 
-ZIP 解壓縮後為 ADUserCount.exe
+ZIP 解壓縮後，執行 ADUserCount.exe
 
 ### 1. 如何執行？
    - 在 ADUserCount.exe 上按「右鍵」 → 「以系統管理員身分執行」
