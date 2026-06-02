@@ -13,7 +13,7 @@
 
 ## 下載執行
 
-> **ADUserCount_yyyyMMdd.zip**
+> **[ADUserCount_yyyyMMdd.zip](https://github.com/ej-kyo/ADUserCount/blob/main/ADUserCount_20260602.zip)**
 
 ZIP 解壓縮後，執行 ADUserCount.exe
 
